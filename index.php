@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+	<meta name='robots' content='noindex,nofollow' />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
@@ -69,6 +70,7 @@
 	    			echo("<div class=\"searchResult__img\">");
 	    			//$matchArrayに格納されているデータの画像パスとナンバーを取り出し、画像を表示し、$imgNumberはidとして表示
 					foreach($matchArray as $imgNumber => $imgPass){
+						$numberArray = array();
 						array_push($numberArray,$imgNumber);
 						echo("<img class= \"imges\" id= \"img{$imgNumber}\" src={$imgPass[0]} alt=\"{$imgPass[1][0]}\" width=\"450px\" height=\"250px\"></a>");
 						
